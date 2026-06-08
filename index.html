@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pt-BR">
 <head>
-  <title>Convite da Maria Liz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chá de Bebê Maria Liz 🎀</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff5f8;
+}
+
+.container{
+    max-width:700px;
+    margin:20px auto;
+    padding:15px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.content{
+    padding:20px;
+    text-align:center;
+}
+
+h1{
+    color:#e88aad;
+}
+
+.info{
+    background:#fff8fb;
+    padding:15px;
+    margin:12px 0;
+    border-radius:12px;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#e88aad;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+#contador{
+    font-size:22px;
+    color:#e88aad;
+    font-weight:bold;
+    margin:15px 0;
+}
+</style>
+
 </head>
+
 <body>
-  <h1>Você está convidado!</h1>
-  <h2>Chá de Bebê da Maria Liz</h2>
+
+<div class="container">
+
+<div class="card">
+
+<img src="convite.png" alt="Convite Maria Liz">
+
+<div class="content">
+
+<h1>🎀 Chá de Bebê da Maria Liz 🎀</h1>
+
+<p>
+A Maria Liz está chegando e você foi convidado para comemorar esta data tão especial.
+</p>
+
+<div class="info">
+📅 <strong>20 de Junho de 2026</strong><br>
+🕒 19h30
+</div>
+
+<div class="info">
+📍 Rua 2 de Agosto, Nº 44<br>
+Bairro da União
+</div>
+
+<div class="info">
+🎁 Fralda P ou M + Mimo<br>
+(Huggies ou Pampers Premium Care)
+</div>
+
+<div id="contador"></div>
+
+<a class="botao"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfTKR6yqf8bYyrurHRcS4MYNy97riwyn3IXrAADbD60NGDnOw/viewform"
+target="_blank">
+🎀 Confirmar Presença </a>
+
+<p>
+💖 Sua presença tornará este momento ainda mais especial!
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+const evento = new Date("2026-06-20T19:30:00").getTime();
+
+setInterval(() => {
+  const agora = new Date().getTime();
+  const distancia = evento - agora;
+
+  const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+
+  document.getElementById("contador").innerHTML =
+  "Faltam " + dias + " dias 🎀";
+},1000);
+</script>
+
 </body>
 </html>
