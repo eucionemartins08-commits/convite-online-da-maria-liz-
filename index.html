@@ -1,135 +1,107 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chá de Bebê Maria Liz 🎀</title>
+<title>Chá de Bebê da Maria Liz</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
     background:#fff5f8;
+    color:#444;
 }
 
 .container{
     max-width:700px;
-    margin:20px auto;
-    padding:15px;
-}
-
-.card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.1);
-}
-
-.card img{
-    width:100%;
-    display:block;
-}
-
-.content{
+    margin:auto;
     padding:20px;
     text-align:center;
 }
 
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
 h1{
-    color:#e88aad;
+    color:#e88cb4;
+}
+
+.laco{
+    font-size:50px;
 }
 
 .info{
-    background:#fff8fb;
-    padding:15px;
-    margin:12px 0;
-    border-radius:12px;
+    margin:20px 0;
+    line-height:1.8;
 }
 
 .botao{
     display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:#e88aad;
+    background:#f7a8c5;
     color:white;
     text-decoration:none;
-    border-radius:40px;
+    padding:15px 25px;
+    border-radius:30px;
     font-size:18px;
-    font-weight:bold;
+    margin-top:15px;
 }
 
-#contador{
-    font-size:22px;
-    color:#e88aad;
-    font-weight:bold;
-    margin:15px 0;
+.botao:hover{
+    opacity:0.9;
+}
+
+.rodape{
+    margin-top:25px;
+    color:#777;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
-
 <div class="card">
 
-<img src="convite.png" alt="Convite Maria Liz">
+<div class="laco">🎀</div>
 
-<div class="content">
-
-<h1>🎀 Chá de Bebê da Maria Liz 🎀</h1>
+<h1>Chá de Bebê da Maria Liz</h1>
 
 <p>
-A Maria Liz está chegando e você foi convidado para comemorar esta data tão especial.
+Com muita alegria, convidamos você para celebrar
+a chegada da nossa princesa!
 </p>
 
 <div class="info">
-📅 <strong>20 de Junho de 2026</strong><br>
-🕒 19h30
+📅 <strong>20/06/2026</strong><br>
+🕖 <strong>19:00</strong><br>
+📍 <strong>Rua 2 de Agosto, nº 44 - Parque 10</strong>
 </div>
 
-<div class="info">
-📍 Rua 2 de Agosto, Nº 44<br>
-Bairro da União
-</div>
+<h3>💝 Sugestão de Presente</h3>
 
-<div class="info">
-🎁 Fralda P ou M + Mimo<br>
-(Huggies ou Pampers Premium Care)
-</div>
-
-<div id="contador"></div>
+<p>
+Fralda P ou M<br>
+(Pampers Care ou Huggies) + Mimo
+</p>
 
 <a class="botao"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfTKR6yqf8bYyrurHRcS4MYNy97riwyn3IXrAADbD60NGDnOw/viewform"
+href="https://forms.gle/NNZeU8P7a7dVTUkU6"
 target="_blank">
-🎀 Confirmar Presença </a>
+✅ Confirmar Presença
+</a>
 
-<p>
-💖 Sua presença tornará este momento ainda mais especial!
-</p>
-
+<div class="rodape">
+💕 Obrigado pela presença e por compartilhar
+esse momento especial da chegada da Maria Liz.
 </div>
 
 </div>
-
 </div>
-
-<script>
-const evento = new Date("2026-06-20T19:30:00").getTime();
-
-setInterval(() => {
-  const agora = new Date().getTime();
-  const distancia = evento - agora;
-
-  const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-
-  document.getElementById("contador").innerHTML =
-  "Faltam " + dias + " dias 🎀";
-},1000);
-</script>
 
 </body>
 </html>
